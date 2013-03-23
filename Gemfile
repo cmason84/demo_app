@@ -7,6 +7,7 @@ gem 'rails', '3.2.1'
 
 group :production do
   gem 'pg'
+  gem 'therubyracer-heroku', :platform => :ruby
 end
 group :development, :test do
   gem 'sqlite3'
@@ -41,3 +42,6 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+gem 'execjs'
+gem 'therubyracer'
